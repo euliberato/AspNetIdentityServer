@@ -2,11 +2,11 @@
 
 ### Resumo: 
 
-Um servidor IdentityServer que serve para implementar o protócolo Oauth2 e a camda OpenId Connect no .NET! O programa irá escopar dois principais métodos: GetProfileDataAsync e IsActiveAsync que estão na classe ProfileService.
+Um servidor IdentityServer que serve para implementar o protócolo Oauth2 e a camada OpenId Connect no .NET! O programa irá escopar dois principais métodos: GetProfileDataAsync e IsActiveAsync que estão na classe ProfileService.
 Basicamente, a classe irá receber um contexto que possui um usuário, irá receber as claims (informações) desse usuário e irá adicionar em uma lista de claims. Elas serão usadas para definir as regras que serão aplicadas para aquele
 usuário específico. Em seguida, será validado se o usuário está ativo ou não. 
 
-O serivdor também é responsável por definir as regras que definem o que é um usuário. Atualmente foi definido o conceito de usuário do sistema e o próprio sistema também está incluso tento em vista que o servidor atual irá receber uma requisição
+O servidor também é responsável por definir as regras que definem o que é um usuário. Atualmente foi definido o conceito de usuário do sistema e o próprio sistema também está incluso tento em vista que o servidor atual irá receber uma requisição
 do client que será o frontend da aplicação. 
 
 ### Configuration: Classe IdentityConfigurarion
